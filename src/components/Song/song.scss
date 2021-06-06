@@ -1,0 +1,90 @@
+.wawes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background:  rgb(0, 0, 0);
+    color: red;
+    border-bottom: 2px solid rgb(163, 155, 155);
+    #buttons{
+        margin-left: 800px;
+        padding: 15px 40px;
+        border-radius: 20px;
+        // background: linear-gradient(rgb(255, 193, 203), rgb(138, 138, 228));
+        background: linear-gradient(red, rgb(141, 49, 49));
+        font-size: 1.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 2px solid white;
+    }
+}
+.songContainer{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 60vh;
+    justify-content: center;
+    h2{
+        text-align: center;
+        color: rgb(182, 174, 174);
+    }h3{
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+    }
+    // background-color: gray;
+    img{
+        width: 35%;
+        border-radius: 20%;
+        border: 5px solid rgb(255, 0, 0);
+        box-shadow: 4px 8px 12px red;
+        margin: 2rem;
+    }
+}
+.Music{
+    
+    
+    // background: linear-gradient(rgb(176, 194, 233), rgb(134, 134, 219), rgb(67, 67, 207));
+    color: red;
+    background: black;
+}
+@media(max-width:500px){
+    .Music{
+        height: 75vh;
+        background: url(theme.jpg)center center ;
+        .wawes{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(95, 95, 173);
+            h2{
+                font-size:2.5rem;
+                color: white;
+            }
+            #buttons{
+                margin-left: 50px;
+                padding: 10px 20px;
+                border: 2px solid white;
+                box-shadow: 4px 6px 8px rgb(204, 201, 201);
+                background: linear-gradient(rgb(236, 147, 236), rgb(118, 118, 233));
+                border-radius: 30px;
+                font-family: Arial, Helvetica, sans-serif;
+                
+            }
+        }.songContainer{
+            img{
+                width: 50%;
+                height: 50%;
+                border-radius: 20px;
+                border: 2px solid white;
+            }h2{
+                text-align: center;
+                color: rgb(182, 174, 174);
+            }h3{
+                text-align: center;
+                font-size: 1.5rem;
+                color: white;
+            }
+        }
+    }
+}

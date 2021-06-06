@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    
+    .player{
+        width: 100%;
+        height: 31vh;
+        margin: auto;
+        color: white;
+        background: rgb(0, 0, 0);
+        color:red;
+        position: fixed;
+        .time-control{
+            display: flex;
+            justify-content: center;
+            p{
+                padding: 2rem;
+            }
+            input{
+                width: 40%;
+                background-color: yellow;
+            }
+        }
+        .controller{
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            #average-icon{
+                margin-left: 200px;
+                margin-right: 200px;
+            }
+        }
+    }
+
+@media(max-width:500px){
+    .player{
+        background: rgb(96, 96, 133);
+        border-top: 2px solid white;
+        color: white;
+        height: 25vh;
+        width: 100%;
+        margin: auto;
+        .time-control{
+            display: flex;
+            justify-content: center;
+            p{
+                padding: 2rem;
+            }
+            input{
+                width: 40%;
+            }
+        }
+        .controller{
+            margin-top: 0px;
+            display: flex;
+            justify-content: space-evenly;
+            #average-icon{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
